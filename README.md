@@ -22,12 +22,18 @@ Nighttime imaging often suffers from lens flare, significantly degrading image q
 
 The project is built with Python 3.10, Pytorch 1.7.0, CUDA 11.7
 
+📁Data
+Flare7K++ consists of Flare7K and Flare-R. Flare7K offers 5,000 scattering flare images and 2,000 reflective flare images, consisting of 25 types of scattering flares and 10 types of reflective flares. Flare-R offers 962 real-captured flare patterns. https://pan.baidu.com/share/init?surl=iNomlQuapPdJqtg3_uX_Fg&pwd=nips
+
+The background images are sampled from [Single Image Reflection Removal with Perceptual Losses, Zhang et al., CVPR 2018]. We filter our most of the flare-corrupted images and overexposed images. https://pan.baidu.com/share/init?surl=BYPRCNSsVmn4VvuU4y4C-Q&pwd=zoyv
+
+
 If you want to use Flare7K++ for training, please use:
 
 python basicsr/train.py -opt options/uformer_flare7kpp_baseline_option.yml
 
 
-Evaluation Code
+📊Evaluation Code
 
 You can run the evaluate.py
 

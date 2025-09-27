@@ -6,7 +6,7 @@
 
 ​​Paper​​: Frequency-Domain Prompt Guided Hybrid Mamba-Transformer for Enhanced Nighttime Flare Removal
 
-Jiajun WU, Bo Wang
+Jiajun Wu, Bo Wang
 
 The Visual Computer (2025)
 

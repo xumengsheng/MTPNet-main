@@ -10,58 +10,23 @@ Jiajun WU, Bo Wang
 
 The Visual Computer (2025)
 
-​​Code Repository​​: https://github.com/xumengsheng/mtpnet-mian
+​​Code Repository​​: https://github.com/xumengsheng/mtpnet-main
+
+🔍Method
+
+**📄 Abstract** 
+
+Nighttime imaging often suffers from lens flare, significantly degrading image quality. Addressing this, we propose MTPNet, a Mamba-Transformer hybrid network guided by frequency-domain prompts, for effective nighttime flare removal. MTPNet integrates the strengths of Mamba and Transformer architectures, introducing an adaptive frequency-domain prompt block to dynamically suppress flare-related frequency components. A feature correlation module fuses encoder and prompt features through dual spatial and channel attention mechanisms. Experiments on real-world and synthetic datasets demonstrate MTPNet's superior performance, improving flare-specific metrics (G-PSNR and S-PSNR) and delivering visually clearer results. This approach offers a robust solution for nighttime image restoration tasks. The source code are available at: https://github.com/xumengsheng/mtpnet-main.
+
+🐍Environments
+The project is built with Python 3.10, Pytorch 1.7.0, CUDA 11.7
 
 If you want to use Flare7K++ for training, please use:
-
 python basicsr/train.py -opt options/uformer_flare7kpp_baseline_option.yml
 
-Evaluation
+
+Evaluation Code
 You can run the evaluate.py
-
-Flare7k++ structure
-
-├── Flare7K
-
-    ├── Reflective_Flare 
-    
-    ├── Scattering_Flare
-    
-         ├── Compound_Flare
-         
-         ├── Glare_with_shimmer
-         
-         ├── Core
-         
-         ├── Light_Source
-         
-         ├── Streak
-         
-├── Flare-R
-
-	├── Compound_Flare
-  
-	├── Light_Source
-  
-├── test_data
-
-     ├── real
-     
-          ├── input
-          
-          ├── gt
-          
-          ├── mask
-          
-     ├── synthetic
-     
-          ├── input
-          
-          ├── gt
-          
-	  ├── mask
-    
-
 
 📖 Citation
 
